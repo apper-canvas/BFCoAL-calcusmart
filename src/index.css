@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply min-h-screen text-surface-800 dark:text-surface-100 bg-gradient-to-br from-surface-50 to-surface-100 dark:from-surface-900 dark:to-surface-800;
+  }
+}
+
+@layer components {
+  .calculator-key {
+    @apply relative flex items-center justify-center text-lg font-medium rounded-xl transition-all duration-200 select-none;
+  }
+  
+  .calculator-key-standard {
+    @apply bg-surface-100 text-surface-700 dark:bg-surface-800 dark:text-surface-200 shadow-neu-light dark:shadow-neu-dark;
+  }
+  
+  .calculator-key-operator {
+    @apply bg-primary-light text-white dark:bg-primary-dark;
+  }
+  
+  .calculator-key-function {
+    @apply bg-secondary-light text-white dark:bg-secondary-dark;
+  }
+  
+  .calculator-key-equals {
+    @apply bg-accent text-white;
+  }
+  
+  .calculator-display {
+    @apply w-full p-4 mb-4 text-right rounded-xl bg-surface-50 dark:bg-surface-800 shadow-inner overflow-x-auto;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 dark:bg-black/20 dark:border-white/10;
+  }
+}
