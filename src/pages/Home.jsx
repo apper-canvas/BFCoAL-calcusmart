@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Calculator, History, X } from "lucide-react";
 import MainFeature from "../components/MainFeature";
 
-//Testing editing changes  ere r
+//Testing editing changes
 
 const Home = () => {
   const [showHistory, setShowHistory] = useState(false);
