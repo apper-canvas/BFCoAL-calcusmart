@@ -92,7 +92,7 @@ const Home = () => {
                   {calculationHistory.length === 0 ? (
                     <div className="flex flex-col items-center justify-center h-full text-surface-500 dark:text-surface-400">
                       <History size={48} className="mb-2 opacity-30" />
-                      <p>No calculations yet</p>
+                      <p>No calculations yet done!</p>
                     </div>
                   ) : (
                     <ul className="space-y-2">
