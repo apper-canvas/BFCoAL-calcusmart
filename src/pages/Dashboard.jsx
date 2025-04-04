@@ -45,7 +45,7 @@ const Dashboard = () => {
   ]);
 
   useEffect(() => {
-    // Simulate fetching dashboard data
+    // Simulate fetching dashboard data Test
     setTimeout(() => {
       setStats({
         totalCalculations: 256,
