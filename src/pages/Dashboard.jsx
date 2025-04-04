@@ -132,7 +132,7 @@ const Dashboard = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="md:col-span-2">
             <ChartCard 
-              title="Calculations Activity" 
+              title="Calculations Activity!" 
               subtitle={`Last 7 days • Updated ${format(new Date(), 'MMM d, yyyy')}`}
               type="bar"
               height={300}
