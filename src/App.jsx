@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 
 //Test comment  test
@@ -57,6 +58,7 @@ function App() {
       <main className="max-w-5xl mx-auto">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
